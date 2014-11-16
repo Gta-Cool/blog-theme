@@ -1,0 +1,13 @@
+<div id="at_top">
+	<div class="row">
+		<div class="large-12 columns text-center">
+			<div class="at_block">
+				{{#if tag}}
+                    <a class="at_icon_menu_item" href="{{ @blog.url }}/tag/{{ tag.slug }}/rss/"><span class="fa fa-rss"></span> <span>{{ tag.name }}</span></a>
+				{{else}}
+					<a class="at_icon_menu_item" href="{{ blog.url }}rss/"><span class="fa fa-rss"></span> <span>S'inscrire</span></a>
+				{{/if}}
+			</div>
+		</div>
+	</div>
+</div>

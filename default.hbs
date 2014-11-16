@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{! Stylesheet }}
+    <link rel="stylesheet" href="/assets/css/theme.min.css" />
+
+    {{! Remove the <!-- --> below to load the custom stylesheet }}
+    {{! <link rel="stylesheet" href="/assets/css/theme.custom.css" /> }}
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+    <div id="at_page_surround">
+        <div id="at_body">
+            {{{ body }}}
+        </div>
+    </div>
+
+    {{! Load jQuery }}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/assets/js/jquery-2.1.0.min.js"><\/script>')</script>
+
+    <script>
+        // Configuration variables
+        var disqus_shortname =     "gta-cool";
+        var googleConfig = {
+            analytics_tracking_id: "UA-56787074-1",
+            fonts_family:          "Open+Sans:400,400italic,700,700italic"
+        };
+    </script>
+    <script src="/assets/js/theme.min.js"></script>
+</body>
+</html>
