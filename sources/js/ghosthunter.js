@@ -23,7 +23,7 @@
 		rss 			: "/rss/",
 		onKeyUp 		: false,
 		result_template : "<h2><a href='{{link}}'>{{title}}</a></h2><h4>{{pubDate}}</h4>",
-		info_template	: "<p>Number of posts found: {{amount}}</p>"
+		info_template	: "<p>Nombre de billet trouvé : {{amount}}</p>"
 	};
 
 	var pluginMethods 	= {
